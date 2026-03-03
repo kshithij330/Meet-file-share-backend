@@ -82,7 +82,7 @@ app.get('/poll/:meetCode', (req, res) => {
       });
     }
   }
-  res.json({ files });
+  res.json({ files, serverTime: Date.now() });
 });
 
 // --- Download endpoint ---
